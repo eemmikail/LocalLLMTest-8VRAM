@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    # Alternatively, you can build from the Dockerfile
+    # build: .
+    container_name: ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    # GPU support for Nvidia GPUs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - OLLAMA_KEEP_ALIVE=1h
+
+volumes:
+  ollama_data:
+    name: ollama
