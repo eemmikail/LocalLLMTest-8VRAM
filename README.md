@@ -1,6 +1,6 @@
 ## 🚀 Yerelde LLM Test Etmek İçin Pratik Bir Yol Arayanlara 👇
 
-Bugün kendi makinemde **Ollama + Docker** stack’i ile nasıl 5+ açık kaynak büyük dil modelini (LLM) nasıl test ettiğimi anlatmak istiyorum. Bu akışı dakikalar içinde ayağa kaldırabilirsiniz.
+Kendi makinende **Ollama + Docker** stack’i ile nasıl 5+ açık kaynak büyük dil modelini (LLM) nasıl test edersin?
 
 ---
 
